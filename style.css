@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    margin-bottom: 10vh;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    width:50%;
+    padding: 0.5rem;
+    gap: 2vw;
+    align-items: center;
+    
+}
+.menu i{
+    padding: 0.5vw;
+}
+
+.menu2 i{
+    padding: 0.5vw;
+}
+.menu img{
+    width: 56px;
+}
+.menu2{
+    display: flex;
+    padding: 0.5rem;
+    gap: 2vw;
+    width: 50%;
+    align-items: center;
+    justify-content: end;
+    
+}
+.menu2 img{
+    width: 24px;
+    padding: 0.5rem;
+}
+.item_menu{
+    display: flex;
+    align-items: center;
+    
+}
+#imgs_formulario{
+    display: flex;
+}
+#imgs_formulario img{
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#imgs_formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
