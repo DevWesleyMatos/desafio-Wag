@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: 0;
 }
 nav{
     display: flex;
@@ -13,6 +14,7 @@ nav{
     padding: 0.5rem;
     gap: 2vw;
     align-items: center;
+    justify-content: space-around;
     
 }
 .menu i{
@@ -45,7 +47,8 @@ nav{
 }
 #imgs_formulario{
     display: flex;
-    
+    justify-content: space-around;
+    align-items: center;
 }
 .perfis{
     display: flex;
@@ -60,26 +63,42 @@ nav{
     object-fit: cover;
     border: solid 1px rgb(58, 218, 58);
 }
-#imgs_formulario form{
+form{
+    max-width: 40vw;
+    max-height: 70vh;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    width: 25vw;
+    width: 22vw;
     padding: 2vw;
     background-color: rgb(243, 239, 232);
 }
 .form-pt1{
     display: flex;
-    border: solid 1px blue;
-    
 }
+
 .form_inputs{
     display: flex;
     flex-direction: column;
-    border: solid 1px yellowgreen;
+    padding: 1vh 1vw 1vh 0 ;
+    gap: 1vh;
+    max-width: 35vw;
+    align-content: flex-start;
+}
+.form_inputs input{
+    border-radius: 5px;
+    padding: 0.3rem;
 }
 .img_qrcode{
-    width: 80px;
-    height: 80px;
-    border-radius: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1vw;
+}
+.img_qrcode img{
+    width: 60px;
+    height: 60px;
 }
 
