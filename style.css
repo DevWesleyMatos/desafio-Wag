@@ -78,7 +78,7 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    width: 22vw;
+    width: 25vw;
     padding: 2vw;
     background-color: rgb(243, 239, 232);
 }
