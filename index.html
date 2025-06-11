@@ -10,12 +10,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
     <!-- CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/css/intlTelInput.css"
+    />
 
-<!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/intlTelInput.min.js"></script>
-
-
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/intlTelInput.min.js"></script>
   </head>
   <body>
     <section>
@@ -98,22 +99,25 @@
                 <input type="text" placeholder="legal middle name" />
                 <input type="text" placeholder="Legal last name" />
                 <input type="email" placeholder="Email address" />
-                <input type="tel" id="telefone" name="telefone" placeholder="Phone number" />
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="Phone number"
+                />
               </div>
               <div class="img_qrcode">
-                <img
-                  src="./imgs/imgs_formulario/qrcode.png"
-                  alt=""
-                />
+                <img src="./imgs/imgs_formulario/qrcode.png" alt="" />
                 <p>Approved Caregiver? Download the app.</p>
               </div>
             </div>
             <div class="text_form">
               <p>
-                By submittin my phone number. | agree to recive automated and no-
-                automated transational and marketing calls/texts from Wag!.
+                By submittin my phone number. | agree to recive automated and
+                no- automated transational and marketing calls/texts from Wag!.
                 Consent not required; text STOP to 2406 to apt out. Opt out
-                instructions subject to change. Messsage and data rates may apply.
+                instructions subject to change. Messsage and data rates may
+                apply.
                 <span>Mobile Terms</span>aply
               </p>
             </div>
@@ -177,8 +181,8 @@
     </section>
 
     <section>
-      <div>
-        <div>
+      <div id="lovedogs">
+        <div class="lovedogs_txt">
           <h1>Love dogs? Get paid for it!</h1>
           <p>
             Caring for dogs is what you do best. Connecting dog walkers,
@@ -190,8 +194,8 @@
           <p><span>Meet some Pet Caregivers wha walk for Wag!</span></p>
         </div>
 
-        <div>
-          <img src="" alt="" />
+        <div class="lovedogs_img">
+          <img src="./imgs/lovedog.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -375,12 +379,12 @@
   </body>
   <script>
     const input = document.querySelector("#telefone");
-  
+
     window.intlTelInput(input, {
-      initialCountry: "br",  // país inicial: Brasil
+      initialCountry: "br", // país inicial: Brasil
       preferredCountries: ["br", "us", "pt"], // opções que aparecem primeiro
-      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js" // para validação e formatação
+      utilsScript:
+        "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.19/build/js/utils.js", // para validação e formatação
     });
   </script>
-  
 </html>
