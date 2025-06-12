@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@500&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -168,10 +168,15 @@ form input[type="button"] {
 }
 #lovedogs {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  background-image: url(./imgs/wave.svg);
-  background-size: cover;
+  padding-top: 2vw;
+  width: 100vw;
+  height: 70vh;
+  background-image: url(./imgs/wates.png);
+  background-repeat: no-repeat;
+  background-size: 100% 200%;
+  background-position: center;
 }
 .lovedogs_txt {
   max-width: 40vw;
