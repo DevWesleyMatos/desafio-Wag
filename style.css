@@ -1,4 +1,4 @@
-
+/* ------------------- RESET / BASE ------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +7,19 @@
   font-family: Roboto, sans-serif;
   font-weight: 500;
 }
+
+body {
+  border: solid 1px red;        /* apenas para depuração, apague se quiser */
+}
+
+/* ------------------- NAV ------------------- */
 nav {
   display: flex;
   margin-bottom: 10vh;
   width: 100%;
 }
+
+/* --- menus --- */
 .menu {
   display: flex;
   width: 50%;
@@ -20,16 +28,14 @@ nav {
   align-items: center;
   justify-content: space-around;
 }
-.menu i {
-  padding: 0.5vw;
-}
-
+.menu i,
 .menu2 i {
   padding: 0.5vw;
 }
 .menu img {
   width: 56px;
 }
+
 .menu2 {
   display: flex;
   padding: 0.5rem;
@@ -42,16 +48,22 @@ nav {
   width: 24px;
   padding: 0.5rem;
 }
+
 .item_menu {
   display: flex;
   align-items: center;
 }
+
+/* ------------------- FORMULÁRIO / PERFIS ------------------- */
 #imgs_formulario {
   display: flex;
   align-items: center;
-  max-width: 100vw;
+  width: 100%;          /* corrigido: antes max-width: 100vw */
   gap: 6vw;
+  flex-wrap: wrap;      /* corrigido: evita overflow em telas menores */
 }
+
+/* perfis de usuários */
 .perfis {
   display: flex;
   align-items: center;
@@ -59,8 +71,8 @@ nav {
   padding: 2vw;
   margin-left: 3vw;
   gap: 1vw;
-  max-width: 50vw;
-  width: 40vw;
+  flex: 1 1 40%;        /* corrigido */
+  max-width: 100%;      /* corrigido */
 }
 .img_perfil {
   width: 80px;
@@ -69,21 +81,23 @@ nav {
   object-fit: cover;
   border: solid 1px rgb(58, 218, 58);
 }
+
+/* formulário */
 form {
-  max-width: 40vw;
+  flex: 1 1 30%;        /* corrigido */
+  max-width: 100%;      /* corrigido */
   max-height: 70vh;
-  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.2);
+  width: 30vw;
+  padding: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  width: 30vw;
-  padding: 2vw;
   background-color: rgb(243, 239, 232);
+  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.2);
 }
 .form-pt1 {
   display: flex;
 }
-
 .form_inputs {
   display: flex;
   flex-direction: column;
@@ -103,9 +117,6 @@ form {
   align-items: center;
   text-align: center;
   padding: 1vw;
-}
-.img_qrcode p {
-  text-align: center;
 }
 .img_qrcode img {
   width: 60px;
@@ -138,6 +149,8 @@ form input[type="button"] {
   margin-top: 2vh;
   border: none;
 }
+
+/* ------------------- WHY WAG SECTION ------------------- */
 #whey {
   text-align: center;
   margin: 3rem;
@@ -145,6 +158,7 @@ form input[type="button"] {
 #whey h1 {
   font-weight: bolder;
 }
+
 #conteudo {
   display: flex;
   flex-direction: row;
@@ -166,12 +180,13 @@ form input[type="button"] {
   padding-top: 1vh;
   color: rgb(109, 102, 102);
 }
+
+/* ------------------- LOVE DOGS SECTION ------------------- */
 #lovedogs {
   display: flex;
   align-items: start;
   justify-content: center;
   padding-top: 2vw;
-  width: 100vw;
   height: 70vh;
   background-image: url(./imgs/wates.png);
   background-repeat: no-repeat;
@@ -191,46 +206,80 @@ form input[type="button"] {
 .lovedogs_txt > *:last-child {
   margin-bottom: 0;
 }
-#petCare{
+
+/* ------------------- PET CARE SECTION ------------------- */
+#petCare {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1vw;
-  font-size:x-large;
+  font-size: x-large;
+  width: 100%;          /* corrigido: antes 100vw */
+  height: 60vh;
 }
-#petTitle{
-
-}
-#petBloco{
+#petBloco {
   margin: 1vw;
   display: flex;
   gap: 2vw;
+  flex-wrap: wrap;      /* corrigido */
+  justify-content: center; /* mantém centralizado */
 }
-.petbox{
-}
-.petbox img{
+.petbox img {
   width: 150px;
 }
-.petconteudo{
+.petconteudo {
   display: flex;
-  justify-content: flex-start;
   justify-content: center;
-  width: 20vw;
+  width: 100%;          /* corrigido */
+  max-width: 20vw;      /* corrigido */
   height: 19vh;
   padding: 1vw;
   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.2);
 }
-.petconteudo p{
+.petconteudo p {
   font-size: small;
 }
-.petptBaixo{
+.petptBaixo {
   display: flex;
   justify-content: center;
-  width: 20vw;  
+  width: 100%;          /* corrigido */
+  max-width: 20vw;      /* corrigido */
   gap: 1vw;
 }
-
-.petptBaixo p{
+.petptBaixo p {
   font-size: x-small;
+  margin-top: 0.5vh;
 }
+
+/* ------------------- GROUND (ESTATÍSTICAS) SECTION ------------------- */
+#ground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29, 29, 105);
+  color: white;
+}
+#groundTitle {
+  padding: 2vw;
+}
+#groundBloco {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;          /* corrigido: ocupa toda a largura do pai */
+  max-width: 1000px;    /* corrigido: limite para não estourar */
+  font-size: x-small;
+  margin: 2vh auto;
+  flex-wrap: wrap;      /* corrigido: quebra em telas menores */
+}
+.groundBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 17vw;
+}
+
+/* ------------------- FIM ------------------- */
