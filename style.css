@@ -196,13 +196,14 @@ form input[type="button"] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3vw;
+  gap: 1vw;
+  font-size:x-large;
 }
 #petTitle{
 
 }
 #petBloco{
-  margin: 5vw;
+  margin: 1vw;
   display: flex;
   gap: 2vw;
 }
@@ -213,8 +214,23 @@ form input[type="button"] {
 }
 .petconteudo{
   display: flex;
-  border: solid 1px blue;
+  justify-content: flex-start;
+  justify-content: center;
+  width: 20vw;
+  height: 19vh;
+  padding: 1vw;
+  box-shadow: -10px 0 15px rgba(0, 0, 0, 0.2);
+}
+.petconteudo p{
+  font-size: small;
 }
 .petptBaixo{
   display: flex;
+  justify-content: center;
+  width: 20vw;  
+  gap: 1vw;
+}
+
+.petptBaixo p{
+  font-size: x-small;
 }
